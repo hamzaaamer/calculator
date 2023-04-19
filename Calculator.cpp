@@ -1,31 +1,51 @@
 #include<iostream>
 using namespace std;
-int main()
+
+int main () 
 {
-    int a , b , result ;
-    char op;
-   
-    cout << "Enter first number : "<<endl;
-    cin >> a ;
+  
+int a, b, result;
+  
+char op;
+  
+ 
+cout << " Enter first number : ";
+  
+cin >> a;
+  
+ 
+cout << "\n Enter the operation [+ , - , / , *] ";
+  
+cin >> op;
+  
+ 
+cout << "\n Enter second number : ";
+  
+cin >> b;
+  
+ 
+if (op == '+')
     
-    cout<<"Enter the operation [+ , - , / , *]"<<endl;
-    cin>>op;
+result = a + b;
+  
+  else if (op == '-')
     
-    cout << "Enter second number : "<<endl;
-    cin >> b ;
+result = a - b;
+  
+  else if (op == '/')
+    
+result = a / b;
+  
+  else if (op == '*')
+    
+result = a * b;
+  
+ 
+cout << "\n Result = " << a << op << b << " = " << result << endl;
+  
+return 0;
 
-    if(op == '+')
-        result = a+b;
-    else if(op == '-')
-        result = a-b;
-   else if(op == '/')
-        result = a/b;
-    else if(op == '*')
-        result = a*b;
-
-cout<<a<<op<<b<<"="<<result<<endl;
-    return 0;
-
+ 
 }
     
 
